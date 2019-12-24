@@ -12,8 +12,8 @@ public class ChangeToCar implements Function<Integer, AutoType> {
 
     @Override
     public AutoType apply(Integer weight) {
-        Function<Integer, AutoType> function = (currentWeigth) -> (int)currentWeigth > 1500 ? AutoType.TRUCK
-                : AutoType.CAR;
+        Function<Integer, AutoType> function = (currentWeigth)
+                -> currentWeigth > 1500 ? AutoType.TRUCK : AutoType.CAR;
         return function.apply(weight);
     }
 }
