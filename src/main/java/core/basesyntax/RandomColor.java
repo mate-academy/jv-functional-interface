@@ -1,18 +1,19 @@
 package core.basesyntax;
 
-import core.basesyntax.interfaces.PickColor;
+import java.util.function.Supplier;
 
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод для случайного
  * выбора цвета</p>
  */
-public class RandomColor implements PickColor {
+public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 
     @Override
     public String get() {
-        PickColor c = () -> COLORS[(int) (Math.random() * (COLORS.length))];
-        return c.get();
+        Supplier<String> color =
+                () -> COLORS[(int) (Math.random() * (COLORS.length))];
+        return color.get();
     }
 }
