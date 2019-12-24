@@ -14,8 +14,7 @@ public class RandomColor {
 
     public String get() {
         SettingRandomColor setColor = () -> {
-            int random = new Random().nextInt(COLORS.length);
-            return COLORS[random];
+            return COLORS[new Random().nextInt(COLORS.length)];
         };
         return setColor.get();
     }
