@@ -38,9 +38,9 @@ public class FunctionalInterfaceTest {
     @Test
     public void changeToCarFunction() {
         ChangeToCar changeToCar = new ChangeToCar();
-        for (Car car : carList){
+        for (Car car : carList) {
             car.setAutoType(changeToCar.apply(car.getWeight()));
-            if (car.getWeight() < 1500){
+            if (car.getWeight() < 1500) {
                 Assert.assertEquals(AutoType.CAR, car.getAutoType());
             } else {
                 Assert.assertEquals(AutoType.TRUCK, car.getAutoType());
