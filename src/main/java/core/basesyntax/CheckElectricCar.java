@@ -11,7 +11,7 @@ public class CheckElectricCar implements Predicate<Car> {
 
     @Override
     public boolean test(Car car) {
-        Predicate predicate = car1 -> car.getEngine().getEngineType().equals(EngineType.ELECTRIC);
+        Predicate<Car> predicate = car1 -> car.getEngine().getEngineType().equals(EngineType.ELECTRIC);
         return predicate.test(car);
     }
 }
