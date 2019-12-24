@@ -6,4 +6,10 @@ package core.basesyntax;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto {
+    Integer apply(Integer firstCarEngineVol, Integer secondCarEngineVol) {
+        CompareEngineInAuto compareEngineInAuto = (firstCar, secondCar) -> {
+            return firstCar - secondCar;
+        };
+        return compareEngineInAuto.checkEngineVolume(firstCarEngineVol, secondCarEngineVol);
+    }
 }
