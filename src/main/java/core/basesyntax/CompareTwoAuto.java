@@ -5,5 +5,10 @@ package core.basesyntax;
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto {
+public class CompareTwoAuto implements Comparator {
+    @Override
+    public Integer apply(Integer firstVolume, Integer secondVolume) {
+        Comparator comparator = (first, second) -> first - second;
+        return comparator.apply(firstVolume, secondVolume);
+    }
 }
