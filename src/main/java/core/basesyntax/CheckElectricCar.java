@@ -8,9 +8,8 @@ import core.basesyntax.interfaces.DefiningElectricCar;
  */
 public class CheckElectricCar {
     public boolean test(Car testingCar) {
-        DefiningElectricCar definingElectricCar = (car) -> {
-            return (car.getEngine().getEngineType().equals(EngineType.ELECTRIC));
-        };
+        DefiningElectricCar definingElectricCar = (car) -> car.getEngine()
+                .getEngineType().equals(EngineType.ELECTRIC);
         return definingElectricCar.test(testingCar);
     }
 }

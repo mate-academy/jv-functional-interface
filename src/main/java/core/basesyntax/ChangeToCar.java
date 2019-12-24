@@ -9,9 +9,8 @@ import core.basesyntax.interfaces.DefinetionOfCarType;
  */
 public class ChangeToCar {
     public AutoType apply(int carsWeight) {
-        DefinetionOfCarType definetionOfCarType = (int weight) -> {
-            return weight < 1500 ? AutoType.CAR : AutoType.TRUCK;
-        };
+        DefinetionOfCarType definetionOfCarType = (int weight) -> weight < 1500
+                ? AutoType.CAR : AutoType.TRUCK;
         return definetionOfCarType.apply(carsWeight);
     }
 }

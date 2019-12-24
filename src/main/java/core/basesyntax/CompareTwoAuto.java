@@ -9,9 +9,7 @@ import core.basesyntax.interfaces.ComparingEngineVolume;
  */
 public class CompareTwoAuto {
     public int apply(int firstVolume, int secondVolume) {
-        ComparingEngineVolume comparingEngineVolume = (firstV, secondV) -> {
-            return firstV - secondV;
-        };
+        ComparingEngineVolume comparingEngineVolume = (firstV, secondV) -> firstV - secondV;
         return comparingEngineVolume.apply(firstVolume, secondVolume);
     }
 }
