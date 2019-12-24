@@ -7,7 +7,7 @@ package core.basesyntax;
 public class CheckElectricCar {
     public boolean test(Car car) {
         CheckElectricEngine checkElectricEngine = currentCar ->
-                currentCar.getEngine().getEngineType().equals(EngineType.ELECTRIC) ? true : false;
+                currentCar.getEngine().getEngineType().equals(EngineType.ELECTRIC);
         return checkElectricEngine.checkMusk(car);
     }
 }
