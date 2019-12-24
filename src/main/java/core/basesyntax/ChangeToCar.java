@@ -1,9 +1,18 @@
 package core.basesyntax;
 
+import java.util.function.IntFunction;
+
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод, который принимает вес авто
  * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
-public class ChangeToCar {
+public class ChangeToCar implements IntFunction<AutoType> {
+
+    @Override
+    public AutoType apply(int value) {
+        IntFunction<AutoType> functionChange
+                = weight -> value > 1500 ? AutoType.TRUCK : AutoType.CAR;
+        return functionChange.apply(value);
+    }
 }
