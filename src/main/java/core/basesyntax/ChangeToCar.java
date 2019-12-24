@@ -7,12 +7,7 @@ package core.basesyntax;
  */
 public class ChangeToCar {
     public AutoType apply(Integer weight) {
-        ChooseCarType chooseCarType = (carWeight) -> {
-            if (weight < 1500) {
-                return AutoType.CAR;
-            }
-            return AutoType.TRUCK;
-        };
+        ChooseCarType chooseCarType = carWeight -> carWeight > 1500 ? AutoType.TRUCK : AutoType.CAR;
         return chooseCarType.check(weight);
     }
 }

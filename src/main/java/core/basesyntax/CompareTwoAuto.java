@@ -7,9 +7,7 @@ package core.basesyntax;
  */
 public class CompareTwoAuto {
     Integer apply(Integer firstCarEngineVol, Integer secondCarEngineVol) {
-        CompareEngineInAuto compareEngineInAuto = (firstCar, secondCar) -> {
-            return firstCar - secondCar;
-        };
+        CompareEngineInAuto compareEngineInAuto = (firstCar, secondCar) -> firstCar - secondCar;
         return compareEngineInAuto.checkEngineVolume(firstCarEngineVol, secondCarEngineVol);
     }
 }
