@@ -7,10 +7,10 @@ import java.util.function.BinaryOperator;
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto implements BinaryOperator {
+public class CompareTwoAuto implements BinaryOperator<Integer> {
 
     @Override
-    public Integer apply(Object o, Object o2) {
-        return (Integer) o - (Integer) o2;
+    public Integer apply(Integer enginePower1, Integer enginePower2) {
+        return enginePower1 - enginePower2;
     }
 }
