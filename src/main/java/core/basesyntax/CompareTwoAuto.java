@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto implements BiFunction<Integer,Integer,Integer> {
+public class CompareTwoAuto implements BiFunction<Integer, Integer, Integer> {
 
     @Override
     public Integer apply(Integer integer, Integer integer2) {
