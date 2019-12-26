@@ -30,11 +30,15 @@ public class Engine {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Engine engine = (Engine) o;
-        return engineType == engine.engineType &&
-                Objects.equals(engineVolume, engine.engineVolume);
+        return engineType == engine.engineType
+                && Objects.equals(engineVolume, engine.engineVolume);
     }
 
     @Override
@@ -44,9 +48,8 @@ public class Engine {
 
     @Override
     public String toString() {
-        return "Engine{" +
-                "engineType=" + engineType +
-                ", engineVolume=" + engineVolume +
-                '}';
+        return "Engine{"
+                + "engineType=" + engineType
+                + ", engineVolume=" + engineVolume + '}';
     }
 }
