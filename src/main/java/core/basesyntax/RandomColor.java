@@ -10,10 +10,10 @@ import java.util.function.Supplier;
 public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
-    Supplier<String> supplier = () -> COLORS[new Random().nextInt(COLORS.length)];
 
     @Override
     public String get() {
+        Supplier<String> supplier = () -> COLORS[new Random().nextInt(COLORS.length)];
         return supplier.get();
     }
 }

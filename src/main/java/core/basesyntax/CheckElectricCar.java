@@ -7,10 +7,11 @@ import java.util.function.Predicate;
  * установлен ли на авто EngineType.ELECTRIC. Метод должен принимать Car.</p>
  */
 public class CheckElectricCar implements Predicate<Car> {
-    Predicate<Car> predicate = (car) -> car.getEngine().getEngineType() == EngineType.ELECTRIC;
 
     @Override
     public boolean test(Car car) {
+        Predicate<Car> predicate = vehicle ->
+                car.getEngine().getEngineType() == EngineType.ELECTRIC;
         return predicate.test(car);
     }
 }

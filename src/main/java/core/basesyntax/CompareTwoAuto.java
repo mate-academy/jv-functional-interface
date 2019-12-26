@@ -8,10 +8,10 @@ import java.util.function.BiFunction;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto  implements BiFunction<Integer,Integer,Integer> {
-    BiFunction<Integer, Integer, Integer> biFunction = (o1, o2) -> o1 - o2;
 
     @Override
     public Integer apply(Integer o1, Integer o2) {
+        BiFunction<Integer, Integer, Integer> biFunction = (power1, power2) -> o1 - o2;
         return biFunction.apply(o1, o2);
     }
 }
