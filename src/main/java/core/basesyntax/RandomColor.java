@@ -12,7 +12,7 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        Supplier<String> chooseColor = () -> COLORS[(int) (Math.random() * 7)];
+        Supplier<String> chooseColor = () -> COLORS[(int) (Math.random() * COLORS.length)];
         return chooseColor.get();
     }
 }
