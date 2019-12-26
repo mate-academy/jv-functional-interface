@@ -11,9 +11,6 @@ public class ChangeToCar implements Function<Integer, AutoType> {
 
     @Override
     public AutoType apply(Integer integer) {
-        if (integer < 1500) {
-            return AutoType.CAR;
-        }
-        return AutoType.TRUCK;
+        return integer < 1500 ? AutoType.CAR : AutoType.TRUCK;
     }
 }
