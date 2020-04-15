@@ -1,6 +1,6 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface CheckElectricCarInterface {
-    boolean test(Car car);
+public interface CheckElectricCarInterface<T> {
+    boolean test(T car);
 }

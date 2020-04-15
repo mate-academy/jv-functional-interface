@@ -1,6 +1,6 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface CompareTwoAutoInterface {
-    Integer apply(int a, int b);
+public interface CompareTwoAutoInterface<T> {
+    T apply(int a, int b);
 }
