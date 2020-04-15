@@ -1,6 +1,6 @@
 package interfaces;
 
 @FunctionalInterface
-public interface GetRandomColorInterface<T> {
+public interface GetType<T> {
     T get();
 }

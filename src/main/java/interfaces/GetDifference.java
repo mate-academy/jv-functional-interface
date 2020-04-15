@@ -1,6 +1,6 @@
 package interfaces;
 
 @FunctionalInterface
-public interface CompareEngineVolumesInterface<T> {
+public interface GetDifference<T> {
     T apply(T first, T second);
 }
