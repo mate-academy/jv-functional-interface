@@ -6,6 +6,7 @@ package core.basesyntax;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto implements IntBinaryOperator {
+
     @Override
     public Integer apply(Integer power1, Integer power2) {
         return power1 - power2;
