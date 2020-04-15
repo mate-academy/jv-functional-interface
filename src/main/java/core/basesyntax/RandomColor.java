@@ -10,6 +10,6 @@ public class RandomColor implements FunctionalRandomColor {
 
     @Override
     public String get() {
-        return COLORS[(int) (Math.random() * 8)];
+        return COLORS[(int) (Math.random() * 7)];
     }
 }

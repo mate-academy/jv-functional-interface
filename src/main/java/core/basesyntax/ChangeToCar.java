@@ -11,12 +11,6 @@ public class ChangeToCar implements FunctionalAutoTape<AutoType> {
 
     @Override
     public AutoType apply(Integer weight) {
-        if (weight < WEIGHT_LIMIT) {
-            return AutoType.CAR;
-        }
-        if (weight > WEIGHT_LIMIT) {
-            return AutoType.TRUCK;
-        }
-        return null;
+        return weight < WEIGHT_LIMIT ? AutoType.CAR : AutoType.TRUCK;
     }
 }
