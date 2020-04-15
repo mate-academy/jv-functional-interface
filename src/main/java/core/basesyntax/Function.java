@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface Function<T,K> {
+public interface Function<T,R> {
 
-    K apply(T weight);
+    R apply(T weight);
 }

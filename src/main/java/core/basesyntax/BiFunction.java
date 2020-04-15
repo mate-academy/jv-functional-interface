@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface BiFunction<T, K, V> {
+public interface BiFunction<T, U, R> {
 
-    V apply(T pow1, K pow2);
+    R apply(T pow1, U pow2);
 }
