@@ -1,6 +1,6 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface ChoseColor {
-    String get();
+public interface ChoseColor<T> {
+    T get();
 }

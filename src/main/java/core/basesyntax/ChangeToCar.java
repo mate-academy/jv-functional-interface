@@ -5,7 +5,7 @@ package core.basesyntax;
  * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
-public class ChangeToCar implements SettingCar {
+public class ChangeToCar implements SettingCar<AutoType> {
     private static final int LIMI_WEIGHT = 1500;
 
     @Override

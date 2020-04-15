@@ -1,6 +1,6 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface ComparePower {
-    int apply(Integer engineVolume1, Integer engineVolum2);
+public interface ComparePower<T> {
+    int apply(T engineVolume1, T engineVolum2);
 }

@@ -1,6 +1,6 @@
 package core.basesyntax;
 
 @FunctionalInterface
-public interface SettingCar {
-    AutoType apply(Integer weight);
+public interface SettingCar<T> {
+    T apply(Integer weight);
 }
