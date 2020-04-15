@@ -5,8 +5,6 @@ package core.basesyntax;
  * установлен ли на авто EngineType.ELECTRIC. Метод должен принимать Car.</p>
  */
 public class CheckElectricCar implements CheckElectricCarInterface {
-
-    @Override
     public boolean test(Car car) {
         return car.getEngine().getEngineType().equals(EngineType.ELECTRIC);
     }

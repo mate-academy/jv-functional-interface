@@ -10,7 +10,6 @@ public class RandomColor implements RandomColorInterface {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 
-    @Override
     public String get() {
         return COLORS[new Random().nextInt(COLORS.length) + 1];
     }
