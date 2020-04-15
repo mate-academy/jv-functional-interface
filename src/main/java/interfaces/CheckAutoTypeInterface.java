@@ -1,8 +1,6 @@
 package interfaces;
 
-import core.basesyntax.AutoType;
-
 @FunctionalInterface
-public interface CheckAutoTypeInterface {
-    AutoType apply(int weight);
+public interface CheckAutoTypeInterface<T> {
+    T apply(int weight);
 }

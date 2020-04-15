@@ -1,8 +1,6 @@
 package interfaces;
 
-import core.basesyntax.Car;
-
 @FunctionalInterface
-public interface CheckElectricEngineInterface {
-    boolean test(Car car);
+public interface CheckElectricEngineInterface<T> {
+    boolean test(T car);
 }

@@ -1,6 +1,6 @@
 package interfaces;
 
 @FunctionalInterface
-public interface GetRandomColorInterface {
-    String get();
+public interface GetRandomColorInterface<T> {
+    T get();
 }

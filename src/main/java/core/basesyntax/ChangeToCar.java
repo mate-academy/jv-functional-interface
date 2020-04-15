@@ -7,7 +7,7 @@ import interfaces.CheckAutoTypeInterface;
  * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
-public class ChangeToCar implements CheckAutoTypeInterface {
+public class ChangeToCar implements CheckAutoTypeInterface<AutoType> {
     private static final int WEIGHT_THRESHOLD = 1500;
 
     @Override
