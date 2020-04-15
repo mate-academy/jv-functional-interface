@@ -7,11 +7,7 @@ package core.basesyntax;
  */
 public class ChangeToCar implements ChangeToCarInterface {
     @Override
-    public AutoType apply(int car) {
-        if (car < 1500) {
-            return AutoType.CAR;
-        } else {
-            return AutoType.TRUCK;
-        }
+    public AutoType apply(int weight) {
+        return weight < 1500 ? AutoType.CAR : AutoType.TRUCK;
     }
 }
