@@ -1,8 +1,14 @@
 package core.basesyntax;
 
+import interfaces.CheckElectricEngineInterface;
+
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод, который реализует проверку
  * установлен ли на авто EngineType.ELECTRIC. Метод должен принимать Car.</p>
  */
-public class CheckElectricCar {
+public class CheckElectricCar implements CheckElectricEngineInterface {
+    @Override
+    public boolean test(Car car) {
+        return car.getEngine().getEngineType().equals(EngineType.ELECTRIC);
+    }
 }
