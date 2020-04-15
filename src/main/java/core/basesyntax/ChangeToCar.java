@@ -6,10 +6,10 @@ package core.basesyntax;
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
 public class ChangeToCar implements SettingCar<AutoType> {
-    private static final int LIMI_WEIGHT = 1500;
+    private static final int LIMIT_WEIGHT = 1500;
 
     @Override
     public AutoType apply(Integer weight) {
-        return weight >= LIMI_WEIGHT ? AutoType.TRUCK : AutoType.CAR;
+        return weight >= LIMIT_WEIGHT ? AutoType.TRUCK : AutoType.CAR;
     }
 }
