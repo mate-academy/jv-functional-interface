@@ -1,13 +1,13 @@
 package core.basesyntax;
 
-import interfaces.GetType;
 import java.util.Random;
+import java.util.function.Supplier;
 
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод для случайного
  * выбора цвета</p>
  */
-public class RandomColor implements GetType<String> {
+public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 
