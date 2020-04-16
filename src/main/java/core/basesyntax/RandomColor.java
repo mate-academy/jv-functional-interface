@@ -1,7 +1,7 @@
 package core.basesyntax;
 
-import java.util.function.Supplier;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
