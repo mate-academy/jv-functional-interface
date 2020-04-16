@@ -9,8 +9,10 @@ import java.util.function.Function;
  */
 public class ChangeToCar implements Function<Integer, AutoType> {
 
+    private static final int WEIGHT = 1500;
+
     @Override
     public AutoType apply(Integer integer) {
-        return integer < 1500 ? AutoType.CAR : AutoType.TRUCK;
+        return integer < WEIGHT ? AutoType.CAR : AutoType.TRUCK;
     }
 }
