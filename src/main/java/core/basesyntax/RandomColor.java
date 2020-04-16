@@ -8,12 +8,11 @@ import java.util.function.Supplier;
  * выбора цвета</p>
  */
 public class RandomColor implements Supplier<String> {
-    private static final int COLOR_INDEX_BOUND = 6;
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 
     @Override
     public String get() {
-        return COLORS[new Random().nextInt(COLOR_INDEX_BOUND)];
+        return COLORS[new Random().nextInt(COLORS.length)];
     }
 }
