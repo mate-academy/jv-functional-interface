@@ -1,15 +1,16 @@
 package core.basesyntax;
 
+import java.util.function.BiFunction;
+
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод для сравнения мощности
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto implements CompareAuto {
+public class CompareTwoAuto implements BiFunction<Integer, Integer, Integer> {
 
     @Override
-    public Integer apply(int power1, int power2) {
-
+    public Integer apply(Integer power1, Integer power2) {
         return power1 - power2;
     }
 }
