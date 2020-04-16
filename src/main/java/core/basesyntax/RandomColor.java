@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Supplier;
 
 /**
@@ -13,8 +14,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        Random random = new Random();
-        int rand = random.nextInt(7);
-        return COLORS[rand];
+        return COLORS[ThreadLocalRandom.current().nextInt(COLORS.length)];
     }
 }
