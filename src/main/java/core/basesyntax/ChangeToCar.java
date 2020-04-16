@@ -7,11 +7,10 @@ import java.util.function.Function;
  * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
-public class ChangeToCar {
+public class ChangeToCar implements Function<Integer, AutoType> {
+    @Override
     public AutoType apply(Integer integer) {
-        Function<Integer, AutoType> changeToCar = (x) -> (x < 1500)
-                ? AutoType.CAR : AutoType.TRUCK;
-        return changeToCar.apply(integer);
+        return (integer < 1500) ? AutoType.CAR : AutoType.TRUCK;
     }
 }
 
