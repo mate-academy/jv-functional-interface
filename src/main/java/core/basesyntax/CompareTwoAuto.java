@@ -9,7 +9,7 @@ import java.util.function.BinaryOperator;
  */
 public class CompareTwoAuto implements BinaryOperator<Integer> {
     @Override
-    public Integer apply(Integer o1, Integer o2) {
-        return o1 - o2;
+    public Integer apply(Integer carEnginePower1, Integer carEnginePower2) {
+        return carEnginePower1 - carEnginePower2;
     }
 }
