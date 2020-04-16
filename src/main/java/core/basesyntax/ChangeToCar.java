@@ -6,4 +6,7 @@ package core.basesyntax;
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
 public class ChangeToCar {
+    public AutoType apply(Integer weight) {
+        return (weight >= 1500) ? AutoType.TRUCK : AutoType.CAR;
+    }
 }

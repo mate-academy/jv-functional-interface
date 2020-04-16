@@ -6,4 +6,7 @@ package core.basesyntax;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto {
+    public Integer apply(Integer engineVolume, Integer engineVolume1) {
+        return engineVolume - engineVolume1;
+    }
 }
