@@ -10,9 +10,6 @@ import java.util.function.Function;
 public class ChangeToCar implements Function<Integer, AutoType> {
     @Override
     public AutoType apply(Integer weight) {
-        if (weight < 1500) {
-            return AutoType.CAR;
-        }
-        return AutoType.TRUCK;
+        return weight < 1500 ? AutoType.CAR : AutoType.TRUCK;
     }
 }
