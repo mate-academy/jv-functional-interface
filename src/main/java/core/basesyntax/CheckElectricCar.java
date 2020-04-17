@@ -10,10 +10,6 @@ public class CheckElectricCar implements Predicate<Car> {
 
     @Override
     public boolean test(Car car) {
-
-        if (car.getEngine().getEngineType() == EngineType.ELECTRIC) {
-            return true;
-        }
-        return false;
+        return car.getEngine().getEngineType().equals(EngineType.ELECTRIC);
     }
 }
