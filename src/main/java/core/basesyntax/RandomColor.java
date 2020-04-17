@@ -1,5 +1,6 @@
 package core.basesyntax;
 
+import java.util.Random;
 import java.util.function.Supplier;
 
 /**
@@ -12,6 +13,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        return COLORS[(int) (Math.random() * 5 + 1)];
+        return COLORS[new Random().nextInt(COLORS.length)];
     }
 }
