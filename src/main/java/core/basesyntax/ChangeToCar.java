@@ -15,4 +15,3 @@ public class ChangeToCar implements Function<Integer, AutoType> {
         return integer < WEIGHT ? AutoType.CAR : AutoType.TRUCK;
     }
 }
-
