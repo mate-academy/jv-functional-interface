@@ -12,7 +12,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        int i = (int) (Math.random() * (COLORS.length - 1));
-        return COLORS[i];
+        return COLORS[(int) (Math.random() * COLORS.length)];
     }
 }
