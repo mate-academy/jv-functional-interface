@@ -11,10 +11,9 @@ public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 
-    Random random = new Random();
-
     @Override
     public String get() {
+        Random random = new Random();
         return COLORS[random.nextInt(COLORS.length)];
     }
 }
