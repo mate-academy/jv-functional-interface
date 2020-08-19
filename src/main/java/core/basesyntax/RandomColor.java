@@ -13,6 +13,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        return COLORS[new Random().nextInt(7)];
+        return COLORS[new Random().nextInt(COLORS.length)];
     }
 }
