@@ -5,5 +5,11 @@ package core.basesyntax;
  * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
-public class ChangeToCar {
+public class ChangeToCar implements AutoTypeCheck {
+    private static final int WEIGHT = 1500;
+
+    @Override
+    public AutoType apply(Integer weight) {
+        return weight > WEIGHT ? AutoType.TRUCK : AutoType.CAR;
+    }
 }
