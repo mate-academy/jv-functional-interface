@@ -8,8 +8,10 @@ import java.util.function.Function;
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
 public class ChangeToCar implements Function<Integer, AutoType> {
+    public static final Integer WEIGHT = 1500;
+
     @Override
     public AutoType apply(Integer weight) {
-        return weight < 1500 ? AutoType.CAR : AutoType.TRUCK;
+        return weight < WEIGHT ? AutoType.CAR : AutoType.TRUCK;
     }
 }
