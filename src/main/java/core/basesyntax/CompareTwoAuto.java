@@ -1,18 +1,15 @@
 package core.basesyntax;
 
-import core.basesyntax.interfaces.ComparatorAuto;
+import java.util.function.BinaryOperator;
 
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод для сравнения мощности
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto implements ComparatorAuto {
+public class CompareTwoAuto implements BinaryOperator<Integer> {
     @Override
-    public int apply(Integer e1, Integer e2) {
-        if (e1 == null || e2 == null) {
-            throw new NullPointerException();
-        }
-        return e1 - e2;
+    public Integer apply(Integer integer, Integer integer2) {
+        return integer - integer2;
     }
 }
