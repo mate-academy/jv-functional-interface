@@ -13,6 +13,6 @@ public class RandomColor implements RandomColorFunctional {
 
     @Override
     public String get() {
-        return COLORS[new Random().nextInt(COLORS.length) - 1];
+        return COLORS[new Random().nextInt(COLORS.length - 1)];
     }
 }
