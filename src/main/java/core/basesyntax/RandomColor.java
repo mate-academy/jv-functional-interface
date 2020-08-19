@@ -10,7 +10,7 @@ public class RandomColor implements RandomColorInterface {
 
     @Override
     public String get() {
-        int randomNumber = (int) (Math.random() * COLORS.length);
+        int randomNumber = (int) (Math.random() * COLORS.length - 1);
         return COLORS[randomNumber];
     }
 }

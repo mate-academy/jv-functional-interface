@@ -2,5 +2,5 @@ package core.basesyntax;
 
 @FunctionalInterface
 public interface CheckElectricCarInterface {
-    public boolean test(Car car);
+    boolean test(Car car);
 }
