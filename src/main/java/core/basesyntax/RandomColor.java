@@ -8,6 +8,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        return COLORS[(int) (Math.random() * 6 + 1)];
+        return COLORS[(int) (Math.random() * COLORS.length)];
     }
 }
