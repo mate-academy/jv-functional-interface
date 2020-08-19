@@ -8,7 +8,7 @@ import java.util.function.BinaryOperator;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto implements BinaryOperator<Integer> {
-    public Integer apply(Integer engineVolume, Integer engineVolume1) {
-        return engineVolume - engineVolume1;
+    public Integer apply(Integer firstPower, Integer secondPower) {
+        return firstPower - secondPower;
     }
 }
