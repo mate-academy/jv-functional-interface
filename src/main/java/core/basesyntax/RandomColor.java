@@ -9,9 +9,10 @@ import java.util.function.Supplier;
 public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
+    private static final int TEN = 10;
 
     @Override
     public String get() {
-        return COLORS[(int) ((Math.random() * 10) % (COLORS.length - 1))];
+        return COLORS[(int) ((Math.random() * TEN) % (COLORS.length - 1))];
     }
 }
