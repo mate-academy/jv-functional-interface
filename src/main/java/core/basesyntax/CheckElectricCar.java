@@ -8,7 +8,8 @@ import java.util.function.Predicate;
  */
 public class CheckElectricCar {
     public boolean test(Car car) {
-        Predicate<Car> isElectric = (c) -> c.getEngine().getEngineType().equals(EngineType.ELECTRIC);
+        Predicate<Car> isElectric =
+                (c) -> c.getEngine().getEngineType().equals(EngineType.ELECTRIC);
         return isElectric.test(car);
     }
 }

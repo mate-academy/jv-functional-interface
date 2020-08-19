@@ -9,7 +9,7 @@ import java.util.function.BinaryOperator;
  */
 public class CompareTwoAuto {
     public Integer apply(Integer engineVolume, Integer engineVolume1) {
-        BinaryOperator<Integer> difference = (i1,i2) -> i1-i2;
-        return difference.apply(engineVolume,engineVolume1);
+        BinaryOperator<Integer> difference = (i1, i2) -> i1 - i2;
+        return difference.apply(engineVolume, engineVolume1);
     }
 }

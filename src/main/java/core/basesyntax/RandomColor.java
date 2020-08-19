@@ -9,7 +9,8 @@ import java.util.function.Supplier;
 public class RandomColor {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
-    public String get(){
+
+    public String get() {
         Supplier<String> randomColour = () -> COLORS[(int) (Math.random() * (COLORS.length - 1))];
         return randomColour.get();
     }

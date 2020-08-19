@@ -9,7 +9,8 @@ import java.util.function.Function;
  */
 public class ChangeToCar {
     public AutoType apply(Integer weight) {
-        Function<Integer, AutoType> autoTypeFunction = (w) -> w < 1500 ? AutoType.CAR : AutoType.TRUCK;
+        Function<Integer, AutoType> autoTypeFunction =
+                (w) -> w < 1500 ? AutoType.CAR : AutoType.TRUCK;
         return autoTypeFunction.apply(weight);
     }
 }
