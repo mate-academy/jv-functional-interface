@@ -1,10 +1,15 @@
 package core.basesyntax;
 
-/**
- * <p>Имплементируйте необходимый функциональный интерфейс и его метод для случайного
- * выбора цвета</p>
- */
-public class RandomColor {
+import java.util.Random;
+
+public class RandomColor implements PickColor {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
+    private static Random RAND = new Random();
+
+    @Override
+    public String get() {
+        int index = RAND.nextInt(COLORS.length);
+        return COLORS[index];
+    }
 }

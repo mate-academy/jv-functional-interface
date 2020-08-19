@@ -8,9 +8,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * When you implement all tasks this class will work correctly:)
- */
 public class FunctionalInterfaceTest {
 
     private List<Car> carList;
