@@ -6,9 +6,11 @@ package core.basesyntax;
  * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
  */
 public class ChangeToCar implements ChangeToCarInterface {
+    private static final int CHECK_WEIGH = 1500;
+
     @Override
     public AutoType apply(int weigh) {
-        if (weigh < 1500) {
+        if (weigh < CHECK_WEIGH) {
             return AutoType.CAR;
         }
         return AutoType.TRUCK;
