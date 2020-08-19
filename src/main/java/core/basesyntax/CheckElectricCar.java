@@ -1,12 +1,12 @@
 package core.basesyntax;
 
-import core.basesyntax.functionalinterfaces.CheckElectricCarFunctional;
+import java.util.function.Predicate;
 
 /**
  * <p>Имплементируйте необходимый функциональный интерфейс и его метод, который реализует проверку
  * установлен ли на авто EngineType.ELECTRIC. Метод должен принимать Car.</p>
  */
-public class CheckElectricCar implements CheckElectricCarFunctional {
+public class CheckElectricCar implements Predicate<Car> {
 
     private static final EngineType ELECTRIC_ENGINE = EngineType.ELECTRIC;
 
