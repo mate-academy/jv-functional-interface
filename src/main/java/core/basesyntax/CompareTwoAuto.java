@@ -6,6 +6,7 @@ package core.basesyntax;
  * Метод должен принимать Integer.</p>
  */
 public class CompareTwoAuto implements CompareAutoInterface {
+
     @Override
     public Integer apply(Integer firstAuto, Integer secondAuto) {
         return firstAuto - secondAuto;
