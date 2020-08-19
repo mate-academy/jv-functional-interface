@@ -7,9 +7,9 @@ import java.util.function.BiFunction;
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto implements BiFunction<Car, Car, Integer> {
+public class CompareTwoAuto implements BiFunction<Integer, Integer, Integer> {
     @Override
-    public Integer apply(Car firstCar, Car secondCar) {
-        return Math.abs(firstCar.getEngine().getEngineVolume() - secondCar.getEngine().getEngineVolume());
+    public Integer apply(Integer firstCarPower, Integer secondCarPower) {
+        return firstCarPower - secondCarPower;
     }
 }
