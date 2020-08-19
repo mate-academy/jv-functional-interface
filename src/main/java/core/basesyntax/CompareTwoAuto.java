@@ -5,5 +5,9 @@ package core.basesyntax;
  * двигателей у двух авто (enginePower) и возврата разницы между ними.
  * Метод должен принимать Integer.</p>
  */
-public class CompareTwoAuto {
+public class CompareTwoAuto implements CompareAutoInterface {
+    @Override
+    public Integer apply(Integer firstAuto, Integer secondAuto) {
+        return firstAuto - secondAuto;
+    }
 }
