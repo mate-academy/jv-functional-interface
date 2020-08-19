@@ -6,4 +6,5 @@ import core.basesyntax.AutoType;
 public interface ChangeToCarFunctional {
 
     AutoType apply(Integer weight);
+
 }

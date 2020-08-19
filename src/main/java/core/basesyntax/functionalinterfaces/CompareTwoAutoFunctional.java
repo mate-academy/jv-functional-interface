@@ -4,4 +4,5 @@ package core.basesyntax.functionalinterfaces;
 public interface CompareTwoAutoFunctional {
 
     Integer apply(Integer firstEngineVolume, Integer secondEngineVolume);
+
 }

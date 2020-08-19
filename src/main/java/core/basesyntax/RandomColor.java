@@ -8,6 +8,7 @@ import java.util.Random;
  * выбора цвета</p>
  */
 public class RandomColor implements RandomColorFunctional {
+
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
 

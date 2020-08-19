@@ -4,5 +4,7 @@ import core.basesyntax.Car;
 
 @FunctionalInterface
 public interface CheckElectricCarFunctional {
+
     boolean test(Car car);
+
 }

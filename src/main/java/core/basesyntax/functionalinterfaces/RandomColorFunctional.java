@@ -4,4 +4,5 @@ package core.basesyntax.functionalinterfaces;
 public interface RandomColorFunctional {
 
     String get();
+
 }
