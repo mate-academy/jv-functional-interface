@@ -10,9 +10,6 @@ public class ChangeToCar implements ChangeToCarInterface {
 
     @Override
     public AutoType apply(int weigh) {
-        if (weigh < CHECK_WEIGH) {
-            return AutoType.CAR;
-        }
-        return AutoType.TRUCK;
+        return weigh < CHECK_WEIGH ? AutoType.CAR : AutoType.TRUCK;
     }
 }
