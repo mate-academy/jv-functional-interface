@@ -1,6 +1,9 @@
 package core.basesyntax;
 
-public class ChangeToCar implements ChangeCar {
+import java.util.function.Function;
+
+public class ChangeToCar implements Function<Integer, AutoType> {
+
     @Override
     public AutoType apply(Integer weight) {
         AutoType autoType;

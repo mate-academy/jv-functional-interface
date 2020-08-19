@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-public class CompareTwoAuto implements CompareTwoAutos {
+import java.util.function.BinaryOperator;
+
+public class CompareTwoAuto implements BinaryOperator<Integer> {
 
     @Override
     public Integer apply(Integer engineVolume1, Integer engineVolume2) {

@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-public class CheckElectricCar implements CheckElectric {
+import java.util.function.Predicate;
+
+public class CheckElectricCar implements Predicate<Car> {
 
     @Override
     public boolean test(Car car) {
