@@ -3,10 +3,6 @@ package core.basesyntax;
 import java.util.Random;
 import java.util.function.Supplier;
 
-/**
- * <p>Имплементируйте необходимый функциональный интерфейс и его метод для случайного
- * выбора цвета</p>
- */
 public class RandomColor implements Supplier<String> {
     private static final String[] COLORS = {"red", "green", "blue", "yellow", "pink",
             "black", "white"};
@@ -15,6 +11,6 @@ public class RandomColor implements Supplier<String> {
     public String get() {
         Random randomColor = new Random();
         int colorInt = randomColor.nextInt(COLORS.length);
-        return COLORS [colorInt];
+        return COLORS[colorInt];
     }
 }
