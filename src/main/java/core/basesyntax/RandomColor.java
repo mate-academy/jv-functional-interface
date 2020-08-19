@@ -11,7 +11,7 @@ public class RandomColor {
             "black", "white"};
 
     public String get() {
-        Supplier<String> randomColour = () -> COLORS[(int) (Math.random() * (COLORS.length - 1))];
+        Supplier<String> randomColour = () -> COLORS[(int) (Math.random() * COLORS.length + 1)];
         return randomColour.get();
     }
 }
