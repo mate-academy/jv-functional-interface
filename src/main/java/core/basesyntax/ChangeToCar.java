@@ -11,7 +11,7 @@ public class ChangeToCar implements Function<Integer, AutoType> {
     private static final int WEIGHT = 1500;
 
     @Override
-    public AutoType apply(Integer integer) {
-        return WEIGHT > integer ? AutoType.CAR : AutoType.TRUCK;
+    public AutoType apply(Integer carWeight) {
+        return WEIGHT > carWeight ? AutoType.CAR : AutoType.TRUCK;
     }
 }
