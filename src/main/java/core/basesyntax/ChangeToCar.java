@@ -6,12 +6,6 @@ public class ChangeToCar implements Function<Integer, AutoType> {
 
     @Override
     public AutoType apply(Integer weight) {
-        AutoType autoType;
-        if (weight < 1500) {
-            autoType = AutoType.CAR;
-        } else {
-            autoType = AutoType.TRUCK;
-        }
-        return autoType;
+        return weight < 1500 ? AutoType.CAR : AutoType.TRUCK;
     }
 }
