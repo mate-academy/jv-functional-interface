@@ -9,8 +9,6 @@ public class RandomColor implements Supplier<String> {
 
     @Override
     public String get() {
-        Random randomColor = new Random();
-        int colorInt = randomColor.nextInt(COLORS.length);
-        return COLORS[colorInt];
+        return COLORS[new Random().nextInt(COLORS.length)];
     }
 }
