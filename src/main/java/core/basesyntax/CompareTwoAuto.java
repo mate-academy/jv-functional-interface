@@ -1,9 +1,9 @@
 package core.basesyntax;
 
 /**
- * <p>Имплементируйте необходимый функциональный интерфейс и его метод для сравнения мощности
- * двигателей у двух авто (enginePower) и возврата разницы между ними.
- * Метод должен принимать Integer.</p>
+ * <p> Implement the suitable functional interface and override its method for engines power comparison
+ * in two cars (enginePower) and return the difference between them.
+ * The method must accept Integer. </p>
  */
 public class CompareTwoAuto {
 }

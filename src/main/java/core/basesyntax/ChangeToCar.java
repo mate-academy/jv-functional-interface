@@ -1,9 +1,9 @@
 package core.basesyntax;
 
 /**
- * <p>Имплементируйте необходимый функциональный интерфейс и его метод, который принимает вес авто
- * и возвращает тип авто в зависимости от веса (если weight меньше 1500, то CAR, если больше, то
- * TRUCK). Метод должен принимать Integer и возвращать AutoType</p>
+ * <p> Implement the suitable functional interface and override its method that takes the car's weight
+ * and returns the type of car depending on the weight (if weight is less than 1500, then CAR, if else then
+ * TRUCK). The method must accept Integer and return AutoType. </p>
  */
 public class ChangeToCar {
 }

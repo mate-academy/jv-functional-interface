@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 /**
- * <p>Имплементируйте необходимый функциональный интерфейс и его метод, который реализует проверку
- * установлен ли на авто EngineType.ELECTRIC. Метод должен принимать Car.</p>
+ * <p> Implement the suitable functional interface and override its method that makes validation
+ * whether EngineType.ELECTRIC installed on auto. The method must accept Car. </p>
  */
 public class CheckElectricCar {
 }
